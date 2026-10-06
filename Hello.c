@@ -1,17 +1,12 @@
 # include<stdio.h>
 
 int main() {
-for(int i=0; i<=5; i++){
-  printf("%d\n", i);
+int i=0;
+do{
+  printf("%d\n",i);
+  i++;
 }
-for(char c='A';c<='Z'; c++){
-  printf("%c\n", c);
-}
-for(char c='a';c<='z'; c++){
-  printf("%c\n", c);
-}
-
-
+while(i<=10);
 
 return 0;
 }
