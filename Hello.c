@@ -1,42 +1,22 @@
 # include<stdio.h>
 
-void Hello();
-void goodbye();
-void namaste();
-void konnichiwa();
+int sum (int a , int b);
 
-int main() {  
 
-    printf("enter 4 character : ");
-    char ch;
-    scanf("%c",& ch);
+int main(){
+   int a,b;
+   printf("enter first number: ");
+   scanf("%d",&a);
+   printf("enter second number: ");
+   scanf("%d",&b);
 
-    if(ch == 'i'){
-        namaste();
-    }else if(ch == 'j'){
-        konnichiwa();
-    }else if(ch == 'e'){
-        Hello();
-    }else{
-        goodbye();
-    }
+   int s = sum(a,b);
+   printf("sum is %d", s);
+    
+    return 0;
 
-return 0;
 }
 
-void Hello(){
-    printf("HELLO!\n");
+int sum(int a, int b){
+    return a + b;
 }
-
-void goodbye(){
-    printf("Goodbye:)\n");
-}
-
-void namaste(){
-    printf("namsate\n");
-}
-
-void konnichiwa(){
-    printf("Konnichiwa :)\n");
-}
-
