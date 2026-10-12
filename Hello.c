@@ -1,22 +1,25 @@
-# include<stdio.h>
+# include <stdio.h>
 
-int sum (int a , int b);
-
+int sum(int a,int b);
+void PrintTable(int n);
 
 int main(){
-   int a,b;
-   printf("enter first number: ");
-   scanf("%d",&a);
-   printf("enter second number: ");
-   scanf("%d",&b);
+    int n;
+    printf("enter your number: ");
+    scanf("%d",&n);
 
-   int s = sum(a,b);
-   printf("sum is %d", s);
-    
+    PrintTable(n);
+
+
     return 0;
-
 }
 
-int sum(int a, int b){
-    return a + b;
-}
+  int sum(int x, int y){
+    return x, y;
+  }
+   
+  void PrintTable(int n){
+    for(int i=1; i<=10; i++){
+        printf("%d\n",i*n);
+    }
+  }
