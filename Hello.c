@@ -2,16 +2,20 @@
 
 int main(){
 
-  int age;
-  printf("enter your age: ");
-  scanf("%d",&age);
-  if(age<=12){
-    printf("Child\n 50 percent, discount");
-  }else if(age>=60){
-    printf("Senior Citizen\n 30 percent, discount");
-  }else{
-    printf("full ticket , no discount");
-  }
+ int marks;
+ printf("Enter your Grade: ");
+ scanf("%d",&marks);
 
+  if(marks>=90&& marks<=100){
+    printf("Grade: A-Excellent!");
+  }else if(marks>=75 && marks<=89){
+    printf("Grade: B-Very Good");
+  }else if(marks>=50 && marks<=74){
+    printf("Grade: C-Good,Passed!");
+  }
+  else{
+    printf("Grade: F-Failed, try agian");
+  }
+ 
     return 0;
 }
