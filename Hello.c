@@ -1,25 +1,17 @@
 # include <stdio.h>
 
-int sum(int a,int b);
-void PrintTable(int n);
-
 int main(){
-    int n;
-    printf("enter your number: ");
-    scanf("%d",&n);
 
-    PrintTable(n);
-
+  int age;
+  printf("enter your age: ");
+  scanf("%d",&age);
+  if(age<=12){
+    printf("Child\n 50 percent, discount");
+  }else if(age>=60){
+    printf("Senior Citizen\n 30 percent, discount");
+  }else{
+    printf("full ticket , no discount");
+  }
 
     return 0;
 }
-
-  int sum(int x, int y){
-    return x, y;
-  }
-   
-  void PrintTable(int n){
-    for(int i=1; i<=10; i++){
-        printf("%d\n",i*n);
-    }
-  }
