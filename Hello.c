@@ -2,20 +2,29 @@
 
 int main(){
 
- int marks;
- printf("Enter your Grade: ");
- scanf("%d",&marks);
+ int correct_pin = 1234;
+ int balance = 10000;
+ int entered_pin;
+ printf("enter your pin: " );
+ scanf("%d",&entered_pin);
 
-  if(marks>=90&& marks<=100){
-    printf("Grade: A-Excellent!");
-  }else if(marks>=75 && marks<=89){
-    printf("Grade: B-Very Good");
-  }else if(marks>=50 && marks<=74){
-    printf("Grade: C-Good,Passed!");
+  
+ if(correct_pin == entered_pin){
+   int withdrawel_amount;
+ printf("enter your withdrawel amount: ");
+  scanf("%d",&withdrawel_amount);
+ 
+ if(withdrawel_amount <= balance){
+  balance -=withdrawel_amount;
+  printf("withdrawel succesful! Remaining balance: %d\n",balance);
+ }else{
+  printf("insufficient balance\n");
+ }
   }
   else{
-    printf("Grade: F-Failed, try agian");
+    printf("Wrong PIN! Access denied.\n" );
   }
  
+
     return 0;
 }
